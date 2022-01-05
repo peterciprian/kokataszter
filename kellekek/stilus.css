@@ -1,0 +1,100 @@
+body{
+background-color:black;
+}
+p.feher{
+color:white;
+text-align: justify;
+font-size: 12px;
+font-family: Arial;
+}
+div.leiras{
+color:white;
+font-size: 12px;
+font-family: Arial;
+text-align: justify;
+}
+div.feher{
+color:white;
+font-size: 12px;
+font-family: Arial;
+}
+a.dolt{
+color:white;
+font-size: 12 px;
+text-decoration:none;
+font-style: italic;
+}
+a.feherlink{
+color:white;
+font-size: 12 px;
+text-decoration:none;
+}
+.center
+{
+margin-left:auto;
+margin-right:auto;
+}
+td.nulla{
+border-spacing: 0px;
+border-style:none;
+border-width: 0px;
+margin: 0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+vertical-align:top;
+}
+td.kiskep{
+width: 90px;
+border-spacing: 0px;
+border-style:none;
+border-width: 0px;
+margin: 0px 0px 0px 0px;
+padding:2px 2px 2px 2px;
+vertical-align:top;
+text-align: center;
+}
+img.nulla{
+border-spacing: 0px;
+border-style:none;
+border-width: 0px;
+margin: 0px 0px 0px 0px;
+}
+img.kiskep{
+border-spacing: 0px;
+border-style:none;
+border-width: 0px;
+margin: 0px 0px 5px 0px;
+width: 80px;
+height: 60px; 
+}
+img.allokep{
+border-spacing: 0px;
+border-style:none;
+border-width: 0px;
+margin: 0px 0px 5px 0px;
+width: 60px;
+height: 80px; 
+}
+table.nulla{
+border-spacing: 0px;
+text-align: center;
+padding:0px 0px 0px 0px;
+border-style:none;
+border-width: 0px;
+}
+table.kiskep{
+border-spacing: 0px;
+text-align: center;
+padding:0px 0px 0px 0px;
+border-style:none;
+border-width: 0px;
+}
+div.jobbra{
+text-align: right;
+}
+div.felirat{
+text-align: center;
+}
+iframe{
+border-style:none;
+border-width:0px;
+}
