@@ -10,13 +10,20 @@ body {
 .container,
 .container-fluid {
     display: flex;
+    flex-direction: column;
 }
 
-.fejlec {
+.fejlec,
+.fejlec a {
     display: flex;
     align-items: center;
     justify-content: space-around;
     border-bottom: 2px solid white;
+}
+
+.fejlec a {
+    width: 100%;
+    text-decoration: none;
 }
 
 .fejlec .cim {
@@ -41,14 +48,60 @@ body {
     width: 100%;
 }
 
+main .terkep,
+main .leiras,
+main .keplista,
+main .linklista {
+    width: 100%;
+    min-height: 100px;
+    padding: 20px;
+}
+
+main .terkep,
+main .leiras,
+main .keplista {
+    border-bottom: 2px solid white;
+}
+
+main .cim {
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    margin-bottom: 14px;
+}
+
+main .leiras {
+    margin-top: 15px;
+    color: white;
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Rubik', sans-serif;
+}
+
+main .kepek img {
+    height: 200px;
+}
+
+main .kepek .kiskep {
+    margin-bottom: 15px;
+}
+
+main .kepek .kiskep .feherlink {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 footer {
     display: flex;
     flex-direction: column;
-    height: 130px;
     margin-top: auto;
 }
 
-footer .linkek {
+footer .lablec {
     padding: 20px;
     display: flex;
     flex-direction: row;
@@ -58,18 +111,18 @@ footer .linkek {
 }
 
 
-footer .linkek .mate {
+footer .lablec .mate {
     font-weight: 900;
     text-transform: uppercase;
     max-width: 600px;
     margin: auto 0;
 }
 
-footer .linkek a {
+footer .lablec a {
     width: 20%;
 }
 
-footer .linkek .icon {
+footer .lablec .icon {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -77,23 +130,23 @@ footer .linkek .icon {
     width: 100%;
 }
 
-footer .linkek .mbfsz .icon {
+footer .lablec .mbfsz .icon {
     background-image: url('/kellekek/MBFSZ.jpg');
 }
 
-footer .linkek .schaf .icon {
+footer .lablec .schaf .icon {
     background-image: url('/kellekek/schafarzik.jpg');
 }
 
-footer .linkek .mna .icon {
+footer .lablec .mna .icon {
     background-image: url('/kellekek/felszínföldtan.jpg');
 }
 
-footer .linkek .msz .icon {
+footer .lablec .msz .icon {
     background-image: url('/kellekek/msz\ 18292_logo.jpg');
 }
 
-footer .linkek .msz-en .icon {
+footer .lablec .msz-en .icon {
     background-image: url('/kellekek/msz\ en\ 1341_logo.jpg');
 }
 
