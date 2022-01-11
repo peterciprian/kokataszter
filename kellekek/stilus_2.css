@@ -4,9 +4,11 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    font-family: 'Rubik', sans-serif;
 }
 
-.container {
+.container,
+.container-fluid {
     display: flex;
 }
 
@@ -14,23 +16,27 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    border-bottom: 2px solid white;
 }
 
 .fejlec .cim {
+    margin-left: 15px;
     color: white;
     text-transform: uppercase;
-    font-family: Roboto, sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 24px;
 }
 
 .fejlec .kep {
-    background-image: url('/kellekek/fej.jpg');
+    background-image: url('/kellekek/fejléc_kép.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: right;
     width: 90%;
     height: 150px;
 }
 
+.container-fluid .row.tartalom .terkep img,
 .container .row.tartalom .terkep img {
     width: 100%;
 }
@@ -43,12 +49,21 @@ footer {
 }
 
 footer .linkek {
+    padding: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    background-image: linear-gradient(to right, gray, black);
 }
 
+
+footer .linkek .mate {
+    font-weight: 900;
+    text-transform: uppercase;
+    max-width: 600px;
+    margin: auto 0;
+}
 
 footer .linkek a {
     width: 20%;
@@ -56,21 +71,22 @@ footer .linkek a {
 
 footer .linkek .icon {
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 100px;
+    background-size: contain;
+    background-position: center;
+    height: 80px;
     width: 100%;
 }
 
 footer .linkek .mbfsz .icon {
-    background-image: url('/kellekek/MBFH_logo.jpg');
+    background-image: url('/kellekek/MBFSZ.jpg');
 }
 
 footer .linkek .schaf .icon {
-    background-image: url('/kellekek/schafarzik_logo.jpg');
+    background-image: url('/kellekek/schafarzik.jpg');
 }
 
 footer .linkek .mna .icon {
-    background-image: url('/kellekek/mernokgeologia.jpg');
+    background-image: url('/kellekek/felszínföldtan.jpg');
 }
 
 footer .linkek .msz .icon {
@@ -81,20 +97,13 @@ footer .linkek .msz-en .icon {
     background-image: url('/kellekek/msz\ en\ 1341_logo.jpg');
 }
 
-
-footer .lablec .mate {
-    background-image: url('/kellekek/lab.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 30px;
-}
-
 p.feher {
+    margin-top: 15px;
     color: white;
     text-align: justify;
-    font-size: 12px;
-    font-family: Arial;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Rubik', sans-serif;
 }
 
 a.dolt {
@@ -102,6 +111,14 @@ a.dolt {
     font-size: 12 px;
     text-decoration: none;
     font-style: italic;
+}
+
+.banyalista {
+    margin-bottom: 12px;
+}
+
+.terkep {
+    padding-bottom: 12px;
 }
 
 /* 
