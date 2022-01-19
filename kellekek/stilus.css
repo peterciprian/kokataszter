@@ -1,100 +1,275 @@
-body{
-background-color:black;
+body {
+    background-color: black;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Rubik', sans-serif;
 }
-p.feher{
-color:white;
-text-align: justify;
-font-size: 12px;
-font-family: Arial;
+
+.container,
+.container-fluid {
+    display: flex;
+    flex-direction: column;
 }
-div.leiras{
-color:white;
-font-size: 12px;
-font-family: Arial;
-text-align: justify;
+
+.fejlec,
+.fejlec a {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 2px solid white;
 }
-div.feher{
-color:white;
-font-size: 12px;
-font-family: Arial;
+
+.fejlec a {
+    width: 100%;
+    text-decoration: none;
 }
-a.dolt{
-color:white;
-font-size: 12 px;
-text-decoration:none;
-font-style: italic;
+
+.fejlec .cim {
+    margin-left: 15px;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
+    font-size: 24px;
 }
-a.feherlink{
-color:white;
-font-size: 12 px;
-text-decoration:none;
+
+.fejlec .kep {
+    background-image: url('/kellekek/fejléc_kép.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    width: 90%;
+    height: 150px;
 }
-.center
-{
-margin-left:auto;
-margin-right:auto;
+
+.container-fluid .row.tartalom .terkep img,
+.container .row.tartalom .terkep img {
+    width: 100%;
 }
-td.nulla{
-border-spacing: 0px;
-border-style:none;
-border-width: 0px;
-margin: 0px 0px 0px 0px;
-padding:0px 0px 0px 0px;
-vertical-align:top;
+
+main .terkep,
+main .leiras,
+main .keplista,
+main .linklista {
+    width: 100%;
+    min-height: 100px;
+    padding: 20px;
 }
-td.kiskep{
-width: 90px;
-border-spacing: 0px;
-border-style:none;
-border-width: 0px;
-margin: 0px 0px 0px 0px;
-padding:2px 2px 2px 2px;
-vertical-align:top;
-text-align: center;
+
+main .terkep,
+main .leiras,
+main .keplista {
+    border-bottom: 2px solid white;
 }
-img.nulla{
-border-spacing: 0px;
-border-style:none;
-border-width: 0px;
-margin: 0px 0px 0px 0px;
+
+main .cim {
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    margin-bottom: 14px;
 }
-img.kiskep{
-border-spacing: 0px;
-border-style:none;
-border-width: 0px;
-margin: 0px 0px 5px 0px;
-width: 80px;
-height: 60px; 
+
+main .leiras {
+    margin-top: 15px;
+    color: white;
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Rubik', sans-serif;
 }
-img.allokep{
-border-spacing: 0px;
-border-style:none;
-border-width: 0px;
-margin: 0px 0px 5px 0px;
-width: 60px;
-height: 80px; 
+
+main .kepek img {
+    height: 200px;
 }
-table.nulla{
-border-spacing: 0px;
-text-align: center;
-padding:0px 0px 0px 0px;
-border-style:none;
-border-width: 0px;
+
+main .kepek .kiskep {
+    margin-bottom: 15px;
 }
-table.kiskep{
-border-spacing: 0px;
-text-align: center;
-padding:0px 0px 0px 0px;
-border-style:none;
-border-width: 0px;
+
+main .kepek .kiskep .feherlink {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-div.jobbra{
-text-align: right;
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
 }
-div.felirat{
-text-align: center;
+
+footer .lablec {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-image: linear-gradient(to right, gray, black);
 }
-iframe{
-border-style:none;
-border-width:0px;
+
+
+footer .lablec .mate {
+    font-weight: 900;
+    text-transform: uppercase;
+    max-width: 600px;
+    margin: auto 0;
 }
+
+footer .lablec a {
+    width: 20%;
+}
+
+footer .lablec .icon {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 80px;
+    width: 100%;
+}
+
+footer .lablec .mbfsz .icon {
+    background-image: url('/kellekek/MBFSZ.jpg');
+}
+
+footer .lablec .schaf .icon {
+    background-image: url('/kellekek/schafarzik.jpg');
+}
+
+footer .lablec .mna .icon {
+    background-image: url('/kellekek/felszínföldtan.jpg');
+}
+
+footer .lablec .msz .icon {
+    background-image: url('/kellekek/msz\ 18292_logo.jpg');
+}
+
+footer .lablec .msz-en .icon {
+    background-image: url('/kellekek/msz\ en\ 1341_logo.jpg');
+}
+
+p.feher {
+    margin-top: 15px;
+    color: white;
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Rubik', sans-serif;
+}
+
+a.dolt {
+    color: white;
+    font-size: 12 px;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.banyalista {
+    margin-bottom: 12px;
+}
+
+.terkep {
+    padding-bottom: 12px;
+}
+
+/* 
+div.leiras {
+    color: white;
+    font-size: 12px;
+    font-family: Arial;
+    text-align: justify;
+}
+
+div.feher {
+    color: white;
+    font-size: 12px;
+    font-family: Arial;
+}
+
+
+a.feherlink {
+    color: white;
+    font-size: 12 px;
+    text-decoration: none;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td.nulla {
+    border-spacing: 0px;
+    border-style: none;
+    border-width: 0px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    vertical-align: top;
+}
+
+td.kiskep {
+    width: 90px;
+    border-spacing: 0px;
+    border-style: none;
+    border-width: 0px;
+    margin: 0px 0px 0px 0px;
+    padding: 2px 2px 2px 2px;
+    vertical-align: top;
+    text-align: center;
+}
+
+img.nulla {
+    border-spacing: 0px;
+    border-style: none;
+    border-width: 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+img.kiskep {
+    border-spacing: 0px;
+    border-style: none;
+    border-width: 0px;
+    margin: 0px 0px 5px 0px;
+    width: 80px;
+    height: 60px;
+}
+
+img.allokep {
+    border-spacing: 0px;
+    border-style: none;
+    border-width: 0px;
+    margin: 0px 0px 5px 0px;
+    width: 60px;
+    height: 80px;
+}
+
+table.nulla {
+    border-spacing: 0px;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    border-style: none;
+    border-width: 0px;
+}
+
+table.kiskep {
+    border-spacing: 0px;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    border-style: none;
+    border-width: 0px;
+}
+
+div.jobbra {
+    text-align: right;
+}
+
+div.felirat {
+    text-align: center;
+}
+
+iframe {
+    border-style: none;
+    border-width: 0px;
+} */
